@@ -36,4 +36,17 @@ public class VirtualPet {
         face.setImage("asleep");
     }
 
+    public void cry() {
+        if (hunger == 0) {
+            face.setImage("cry");
+        }
+    }
+
+    public void play() {
+        if (hunger > 3) {
+            face.setImage("joyful");
+        }
+        
+    }
+
 } // end Virtual Pet
